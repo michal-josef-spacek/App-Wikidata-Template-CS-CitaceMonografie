@@ -1,0 +1,22 @@
+TODO
+----
+2. Pridat odkaz na autora.
+4. Pridat pocet stran.
+5. Pridat link na nakladatelstvi.
+6. Kdyz je vice podtitulu, tak zpracovat? Q83952523
+7. Kdyz dam Q94952745, tak ilustratorka je Fučík, místo Fučíková
+9. Kdyz neni uveden titul, vyhodi warning.
+10. Presunout sem wd-citace-monografie
+11. Warning when author hasn't filled 'given name' and 'family name'.
+12.
+
+Applied
+=======
+1. Prvni verze skriptu, ktery stahne informace z Wikidata a vytvori Wikipedia {{Citace monografie}} blok.
+OK [20191106] skim
+
+3. Pridat ilustratory.
+OK [20200105] skim
+
+8. Odkaz na online dilo
+OK [20200606] skim
