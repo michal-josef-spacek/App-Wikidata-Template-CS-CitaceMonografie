@@ -8,7 +8,8 @@ TODO
 9. Kdyz neni uveden titul, vyhodi warning.
 10. Presunout sem wd-citace-monografie
 11. Warning when author hasn't filled 'given name' and 'family name'.
-12.
+12. Add explicit order of keys
+13.
 
 Applied
 =======
