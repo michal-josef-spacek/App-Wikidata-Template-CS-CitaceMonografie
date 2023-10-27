@@ -11,7 +11,7 @@ use Unicode::UTF8 qw(decode_utf8 encode_utf8);
 use Wikibase::API;
 use Wikibase::Datatype::Query;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 Readonly::Scalar our $LANGUAGE => 'cs';
 
@@ -371,6 +371,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
