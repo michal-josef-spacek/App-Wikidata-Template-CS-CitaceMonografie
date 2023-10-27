@@ -54,10 +54,12 @@ sub run {
 	}
 	my $wd_id = $ARGV[0];
 
+	# API object.
 	$self->{'_api'} = Wikibase::API->new(
 		'mediawiki_site' => $self->{'_opts'}->{'m'},
 	);
 
+	# Get item.
 	my $item = $self->{'_api'}->get_item($wd_id);
 
 	# Check for edition.
@@ -65,15 +67,20 @@ sub run {
 		err "This item isn't book edition.";
 	}
 
+	# Citation parameters.
+	# XXX Rewrite to data object.
 	my $citace_params_hr = $self->_get_citace_params($item);
 
-	print encode_utf8($self->_citace_monografie($citace_params_hr, $self->{'_opts'}->{'p'})), "\n";
+	# Print to putput.
+	print encode_utf8($self->_citace_monografie($citace_params_hr,
+		$self->{'_opts'}->{'p'})), "\n";
 
 	return 0;
 }
 
 sub _citace_monografie {
 	my ($self, $params_hr, $pretty_print) = @_;
+
 	$pretty_print //= 0;
 	my $ret = '{{citace monografie';
 	foreach my $param (sort keys %{$params_hr}) {
@@ -87,6 +94,7 @@ sub _citace_monografie {
 	} else {
 		$ret .= ' }}';
 	}
+
 	return $ret;
 }
 
