@@ -5,7 +5,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Command line tool for print Wikidata item.';
+abstract 'Command line tool for create Czech Wikipedia template for monography defined by Wikidata.';
 author 'Michal Josef Spacek <skim@cpan.org>';
 author_requires 'English' => 0;
 author_requires 'File::Object' => 0.05;

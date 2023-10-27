@@ -1,5 +1,5 @@
 ---
-abstract: 'Command line tool for print Wikidata item.'
+abstract: 'Command line tool for create Czech Wikipedia template for monography defined by Wikidata.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:

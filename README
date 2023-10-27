@@ -1,5 +1,6 @@
 NAME
-    wd-citace-monografie - Script to manipulate with Wikidata.org.
+    wd-citace-monografie - Command line tool for create Czech Wikipedia
+    template for monography defined by Wikidata.
 
 SYNOPSIS
      wd-citace-monografie [-h] [-l lang] [-m mediawiki_site] [--version] wd_id

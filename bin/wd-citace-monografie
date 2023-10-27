@@ -24,7 +24,7 @@ __END__
 
 =head1 NAME
 
-wd-citace-monografie - Script to manipulate with Wikidata.org.
+wd-citace-monografie - Command line tool for create Czech Wikipedia template for monography defined by Wikidata.
 
 =head1 SYNOPSIS
 
