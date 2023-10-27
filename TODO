@@ -1,15 +1,13 @@
 TODO
 ----
 2. Pridat odkaz na autora.
-4. Pridat pocet stran.
 5. Pridat link na nakladatelstvi.
 6. Kdyz je vice podtitulu, tak zpracovat? Q83952523
 7. Kdyz dam Q94952745, tak ilustratorka je Fučík, místo Fučíková
 9. Kdyz neni uveden titul, vyhodi warning.
-10. Presunout sem wd-citace-monografie
 11. Warning when author hasn't filled 'given name' and 'family name'.
 12. Add explicit order of keys
-13. Resit po Data-Wikipedia-CS-Template-CitaceMonografie
+13. Rewrite to Data-Wikipedia-CS-Template-CitaceMonografie
 14.
 
 Applied
@@ -22,3 +20,9 @@ OK [20200105] skim
 
 8. Odkaz na online dilo
 OK [20200606] skim
+
+4. Pridat pocet stran.
+OK [20231027] skim
+
+10. Presunout sem wd-citace-monografie
+OK [20231027] skim
