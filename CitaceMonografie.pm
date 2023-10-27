@@ -246,7 +246,10 @@ sub _get_citace_params {
 	}
 
 	# Number of pages.
-	$ret_hr->{decode_utf8('počet stran')} = $self->{'_q'}->query($item, 'P1104');
+	my $number_of_pages = $self->{'_q'}->query($item, 'P1104');
+	if (defined $number_of_pages) {
+		$ret_hr->{decode_utf8('počet stran')} = $number_of_pages;
+	}
 
 	# Edition number.
 	my $edition_number = $self->{'_q'}->query($item, 'P393');
