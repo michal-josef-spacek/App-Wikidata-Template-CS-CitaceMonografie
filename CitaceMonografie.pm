@@ -65,10 +65,6 @@ sub run {
 		err "This item isn't book edition.";
 	}
 
-	# TODO
-use Data::Printer;
-p $item;
-
 	my $citace_params_hr = $self->_get_citace_params($item);
 
 	print encode_utf8($self->_citace_monografie($citace_params_hr, $self->{'_opts'}->{'p'})), "\n";
