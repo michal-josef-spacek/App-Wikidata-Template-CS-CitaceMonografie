@@ -28,7 +28,7 @@ wd-citace-monografie - Command line tool for create Czech Wikipedia template for
 
 =head1 SYNOPSIS
 
- wd-citace-monografie [-h] [-l lang] [-m mediawiki_site] [--version] wd_id
+ wd-citace-monografie [-h] [-l lang] [-m mediawiki_site] [-p] [--version] wd_id
 
 =head1 ARGUMENTS
 
@@ -50,13 +50,17 @@ MediaWiki site.
 
 Default value is 'www.wikidata.org'.
 
+=item * C<-p>
+
+Pretty print.
+
 =item * C<--version>
 
 Print version of script.
 
 =item * C<wd_id>
 
-Identifier in Wikidata (qid or pid or lid).
+Identifier of book edition in Wikidata (qid).
 
 =back
 

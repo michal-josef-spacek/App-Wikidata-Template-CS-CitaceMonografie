@@ -3,7 +3,7 @@ NAME
     template for monography defined by Wikidata.
 
 SYNOPSIS
-     wd-citace-monografie [-h] [-l lang] [-m mediawiki_site] [--version] wd_id
+     wd-citace-monografie [-h] [-l lang] [-m mediawiki_site] [-p] [--version] wd_id
 
 ARGUMENTS
     *       "-h"
@@ -22,13 +22,17 @@ ARGUMENTS
 
             Default value is 'www.wikidata.org'.
 
+    *       "-p"
+
+            Pretty print.
+
     *       "--version"
 
             Print version of script.
 
     *       "wd_id"
 
-            Identifier in Wikidata (qid or pid or lid).
+            Identifier of book edition in Wikidata (qid).
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/App-Wikidata-Template-CS-CitaceM

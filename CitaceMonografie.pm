@@ -306,24 +306,34 @@ Returns 1 for error, 0 for success.
 
 =head1 EXAMPLE
 
-=for comment filename=print_p2668_in_czech.pl
+=for comment filename=print_q79324593_in_czech.pl
 
  use strict;
  use warnings;
 
- use App::Wikidata::Template::CitaceMonografie;
+ use App::Wikidata::Template::CS::CitaceMonografie;
 
  # Arguments.
  @ARGV = (
          '-l cs',
-         'P2668',
+         '-p',
+         'Q79324593',
  );
 
  # Run.
- exit App::Wikidata::Template::CitaceMonografie->new->run;
+ exit App::Wikidata::Template::CS::CitaceMonografie->new->run;
 
  # Output like:
- # TODO
+ # {{citace monografie
+ #  | autor = Mistr Eckhart
+ #  | isbn = 978-80-901884-8-8
+ #  | místo = Brno
+ #  | počet stran = 333
+ #  | překladatelé = Martin Mrskoš, Petr Snášil, Vilém Konečný
+ #  | rok = 2019
+ #  | titul = Kázání
+ #  | vydavatel = Horus
+ # }}
 
 =head1 DEPENDENCIES
 
