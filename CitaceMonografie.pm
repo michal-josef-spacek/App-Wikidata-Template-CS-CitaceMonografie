@@ -13,7 +13,7 @@ use Wikibase::Datatype::Query;
 
 our $VERSION = 0.02;
 
-Readonly::Scalar our $LANGUAGE => 'cs';
+Readonly::Array our @LANGUAGES => ('mul', 'cs', 'en');
 
 # Constructor.
 sub new {
@@ -269,13 +269,18 @@ sub _get_citace_params {
 sub _get_page_label {
 	my ($self, $page_id, $lang) = @_;
 
-	$lang //= $LANGUAGE;
 	my $item = $self->{'_api'}->get_item($page_id);
-	my $label = $self->{'_q'}->query($item, 'label:'.$lang);
-	if (defined $label) {
-		return $label;
+	my @languages = @LANGUAGES;
+	if (defined $lang) {
+		unshift @languages, $lang;
 	}
-	err "No '$lang' description for '$page_id'.";
+	foreach my $l (@languages) {
+		my $label = $self->{'_q'}->query($item, 'label:'.$l);
+		if (defined $label) {
+			return $label;
+		}
+	}
+	err "No language (".(join ', ', @languages).") description for '$page_id'.";
 }
 
 1;
