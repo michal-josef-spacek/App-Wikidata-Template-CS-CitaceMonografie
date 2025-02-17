@@ -30,6 +30,8 @@ requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/App-Wikidata-Template-CS-CitaceMonografie/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/App-Wikidata-Template-CS-CitaceMonografie';
 resources 'repository' => 'git://github.com/michal-josef-spacek/App-Wikidata-Template-CS-CitaceMonografie';
+test_requires 'English' => 0;
+test_requires 'Error::Pure::Utils' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;
