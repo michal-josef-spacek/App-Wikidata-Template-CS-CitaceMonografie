@@ -48,7 +48,7 @@ sub run {
 		print STDERR "\t-h\t\t\tHelp.\n";
 		print STDERR "\t-l lang\t\t\tLanguage used (default is English = en)\n";
 		print STDERR "\t-m mediawiki_site\tMediaWiki site (default is www.wikidata.org).\n";
-		print STDERR "\t-m\t\t\tPretty print.\n";
+		print STDERR "\t-p\t\t\tPretty print.\n";
 		print STDERR "\t--version\t\tPrint version.\n";
 		print STDERR "\twd_id\t\t\tWikidata id (qid or pid or lid).\n";
 		return 1;
