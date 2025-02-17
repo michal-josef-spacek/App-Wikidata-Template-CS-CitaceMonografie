@@ -1,6 +1,7 @@
 0.03
  - Add constructor tests.
  - Fix help.
+ - Improve help.
  - Provision fix of P31 check (add support for translated edition).
  - Update copyright years.
 

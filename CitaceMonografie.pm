@@ -45,7 +45,7 @@ sub run {
 	};
 	if (! getopts('hl:m:p', $self->{'_opts'}) || $self->{'_opts'}->{'h'}) {
 		print STDERR "Usage: $0 [-h] [-l lang] [-m mediawiki_site] [-p] [--version] wd_id\n";
-		print STDERR "\t-h\t\t\tHelp.\n";
+		print STDERR "\t-h\t\t\tPrint help.\n";
 		print STDERR "\t-l lang\t\t\tLanguage used (default is English = en)\n";
 		print STDERR "\t-m mediawiki_site\tMediaWiki site (default is www.wikidata.org).\n";
 		print STDERR "\t-p\t\t\tPretty print.\n";
