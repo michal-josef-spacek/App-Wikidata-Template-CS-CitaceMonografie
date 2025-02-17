@@ -1,4 +1,5 @@
 0.03
+ - Add basic run() tests.
  - Add constructor tests.
  - Fix help.
  - Fix required options of tool.
