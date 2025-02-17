@@ -6,6 +6,7 @@ use warnings;
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Getopt::Std;
+use List::Util 1.33 qw(none);
 use Readonly;
 use Unicode::UTF8 qw(decode_utf8 encode_utf8);
 use Wikibase::API;
@@ -63,7 +64,7 @@ sub run {
 	my $item = $self->{'_api'}->get_item($wd_id);
 
 	# Check for edition.
-	if ($self->{'_q'}->query($item, 'P31') ne 'Q3331189') {
+	if (none { $self->{'_q'}->query($item, 'P31') eq $_ } ('Q3331189', 'Q21112633')) {
 		err "This item isn't book edition.";
 	}
 

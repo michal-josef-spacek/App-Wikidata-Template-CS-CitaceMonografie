@@ -11,7 +11,8 @@ TODO
 14. Add texts.
 15. Fix Q121962211, which has deprecated value in family name.
 16. Add DESCRIPTION section to doc.
-17.
+17. Improve check for P31 to all "version, edition..." subclasses.
+18.
 
 Applied
 =======
