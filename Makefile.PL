@@ -43,7 +43,7 @@ test_requires 'Wikibase::Datatype::Snak' => 0;
 test_requires 'Wikibase::Datatype::Statement' => 0;
 test_requires 'Wikibase::Datatype::Value' => 0;
 tests_recursive;
-version '0.04';
+version '0.05';
 
 # Run.
 WriteAll();
