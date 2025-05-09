@@ -1,5 +1,6 @@
 0.04
  - Fix DEPENDENCIES section in doc.
+ - Fix check of P31 property.
  - Fix minimal version of Test::Warn to 0.31.
  - Rewrite code for fetching Wikidata item to callback. For better testing.
 

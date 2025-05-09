@@ -77,7 +77,10 @@ sub run {
 	my $item = $self->{'cb_wikidata'}->($self, $wd_id);
 
 	# Check for edition.
-	if (none { $self->{'_q'}->query($item, 'P31') eq $_ } ('Q3331189', 'Q21112633')) {
+	my $item_p31 = $self->{'_q'}->query($item, 'P31');
+	if (! defined $item_p31
+		|| none { $item_p31 eq $_ } ('Q3331189', 'Q21112633')) {
+
 		err "This item isn't book edition.";
 	}
 
