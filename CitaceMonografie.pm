@@ -360,6 +360,7 @@ Returns 1 for error, 0 for success.
 L<Class::Utils>,
 L<Error::Pure>,
 L<Getopt::Std>,
+L<List::Util>,
 L<Readonly>,
 L<Unicode::UTF8>,
 L<Wikibase::API>,
