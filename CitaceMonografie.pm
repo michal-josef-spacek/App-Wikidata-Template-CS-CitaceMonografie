@@ -23,6 +23,16 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
+	# Callback to fetch item from Wikidata.
+	$self->{'cb_wikidata'} = sub {
+		my ($self, $wd_id) = @_;
+
+		# Get item.
+		my $item = $self->{'_api'}->get_item($wd_id);
+
+		return $item;
+	};
+
 	# Process parameters.
 	set_params($self, @params);
 
@@ -64,7 +74,7 @@ sub run {
 	);
 
 	# Get item.
-	my $item = $self->{'_api'}->get_item($wd_id);
+	my $item = $self->{'cb_wikidata'}->($self, $wd_id);
 
 	# Check for edition.
 	if (none { $self->{'_q'}->query($item, 'P31') eq $_ } ('Q3331189', 'Q21112633')) {
