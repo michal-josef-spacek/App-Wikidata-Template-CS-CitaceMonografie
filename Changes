@@ -1,4 +1,5 @@
 0.04
+ - Add tests for check of edition.
  - Fix DEPENDENCIES section in doc.
  - Fix check of P31 property.
  - Fix minimal version of Test::Warn to 0.31.

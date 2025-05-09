@@ -12,6 +12,10 @@ build_requires:
   Test::NoWarnings: 0
   Test::Output: 0
   Test::Warn: 0.31
+  Wikibase::Datatype::Item: 0
+  Wikibase::Datatype::Snak: 0
+  Wikibase::Datatype::Statement: 0
+  Wikibase::Datatype::Value: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
