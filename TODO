@@ -2,7 +2,6 @@ TODO
 ----
 5. Pridat link na nakladatelstvi.
 6. Kdyz je vice podtitulu, tak zpracovat? Q83952523
-7. Kdyz dam Q94952745, tak ilustratorka je Fučík, místo Fučíková
 9. Kdyz neni uveden titul, vyhodi warning.
 11. Warning when author hasn't filled 'given name' and 'family name'.
 12. Add explicit order of keys
@@ -31,4 +30,8 @@ OK [20231027] skim
 OK [20231027] skim
 
 2. Pridat odkaz na autora.
+OK [20250927] skim
+
+7. Kdyz dam Q94952745, tak ilustratorka je Fučík, místo Fučíková
+Fixed in Wikidata
 OK [20250927] skim
