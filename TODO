@@ -7,7 +7,6 @@ TODO
 12. Add explicit order of keys
 13. Rewrite to Data-Wikipedia-CS-Template-CitaceMonografie
 14. Add texts.
-15. Fix Q121962211, which has deprecated value in family name.
 16. Add DESCRIPTION section to doc.
 17. Improve check for P31 to all "version, edition..." subclasses.
 18.
@@ -34,4 +33,8 @@ OK [20250927] skim
 
 7. Kdyz dam Q94952745, tak ilustratorka je Fučík, místo Fučíková
 Fixed in Wikidata
+OK [20250927] skim
+
+15. Fix Q121962211, which has deprecated value in family name.
+In default mode doesn't process deprecated statements (Wikibase::Datatype::Query).
 OK [20250927] skim
