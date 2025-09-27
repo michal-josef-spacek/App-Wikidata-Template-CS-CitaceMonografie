@@ -99,7 +99,7 @@ sub _citace_monografie {
 	my ($self, $params_hr, $pretty_print) = @_;
 
 	$pretty_print //= 0;
-	my $ret = '{{citace monografie';
+	my $ret = '{{Citace monografie';
 	foreach my $param (sort keys %{$params_hr}) {
 		if ($pretty_print) {
 			$ret .= "\n";
@@ -357,7 +357,7 @@ Returns 1 for error, 0 for success.
  exit App::Wikidata::Template::CS::CitaceMonografie->new->run;
 
  # Output like:
- # {{citace monografie
+ # {{Citace monografie
  #  | autor = Mistr Eckhart
  #  | isbn = 978-80-901884-8-8
  #  | místo = Brno
