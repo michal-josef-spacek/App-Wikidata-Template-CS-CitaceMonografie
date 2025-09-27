@@ -11,7 +11,7 @@ use Mo::utils 0.12 qw(check_code);
 use Readonly;
 use Unicode::UTF8 qw(decode_utf8 encode_utf8);
 use Wikibase::API;
-use Wikibase::Datatype::Query;
+use Wikibase::Datatype::Query 0.06;
 
 our $VERSION = 0.05;
 
@@ -157,7 +157,11 @@ sub _get_citace_params {
 		}
 
 		# Link to author.
-		# TODO
+		# XXX Hardcoded lang = 'cs'.
+		my $sitelink_title = $self->{'_q'}->query($author_item, 'sitelink:cs');
+		if (defined $sitelink_title) {
+			$ret_hr->{'odkaz na autora'} = $sitelink_title;
+		}
 
 		$author_count++;
 	}

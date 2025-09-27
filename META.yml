@@ -41,7 +41,7 @@ requires:
   Readonly: 0
   Unicode::UTF8: 0
   Wikibase::API: 0.04
-  Wikibase::Datatype::Query: 0
+  Wikibase::Datatype::Query: 0.06
   perl: 5.6.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/App-Wikidata-Template-CS-CitaceMonografie/issues
