@@ -37,6 +37,7 @@ requires:
   Error::Pure: 0
   Getopt::Std: 0
   List::Util: 1.33
+  Mo::utils: 0.12
   Readonly: 0
   Unicode::UTF8: 0
   Wikibase::API: 0.04

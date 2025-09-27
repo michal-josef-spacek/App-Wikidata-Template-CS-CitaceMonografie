@@ -7,6 +7,7 @@ use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Getopt::Std;
 use List::Util 1.33 qw(none);
+use Mo::utils 0.12 qw(check_code);
 use Readonly;
 use Unicode::UTF8 qw(decode_utf8 encode_utf8);
 use Wikibase::API;
@@ -35,6 +36,9 @@ sub new {
 
 	# Process parameters.
 	set_params($self, @params);
+
+	# Check 'cb_wikidata'.
+	check_code($self, 'cb_wikidata');
 
 	$self->{'_q'} = Wikibase::Datatype::Query->new;
 

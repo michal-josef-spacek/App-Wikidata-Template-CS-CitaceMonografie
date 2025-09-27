@@ -1,4 +1,5 @@
 0.05
+ - Add check of 'cb_wikidata' callback.
  - Rename {{citace ..}} to {{Citace ..}}.
 
 0.04 2025-05-09T09:52:12+02:00
