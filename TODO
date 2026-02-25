@@ -10,7 +10,9 @@ TODO
 16. Add DESCRIPTION section to doc.
 17. Improve check for P31 to all "version, edition..." subclasses.
 18. Process multiple family names.
-19.
+19. Fix Q138471014, there are 5 translators, 2 as links, 3 as author strings with roles.
+20. Add debug mode.
+21.
 
 Applied
 =======
