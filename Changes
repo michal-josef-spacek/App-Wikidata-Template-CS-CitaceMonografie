@@ -1,4 +1,6 @@
 0.06
+ - Add test for real situation from Wikidata with translators defined by
+   P655 and P2093.
  - Fix usage od 'cb_wikidata' callbacku.
 
 0.05 2025-09-27T12:31:07+02:00

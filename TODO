@@ -11,6 +11,7 @@ TODO
 17. Improve check for P31 to all "version, edition..." subclasses.
 18. Process multiple family names.
 19. Fix Q138471014, there are 5 translators, 2 as links, 3 as author strings with roles.
+The situation test is in t/data/.
 20. Add debug mode.
 21.
 
