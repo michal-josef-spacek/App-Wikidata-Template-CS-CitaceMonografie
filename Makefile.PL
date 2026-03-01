@@ -47,7 +47,7 @@ test_requires 'Wikibase::Datatype::Statement' => 0;
 test_requires 'Wikibase::Datatype::Struct::Item' => 0;
 test_requires 'Wikibase::Datatype::Value' => 0;
 tests_recursive;
-version '0.06';
+version '0.07';
 
 # Run.
 WriteAll();
